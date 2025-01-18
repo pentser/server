@@ -29,8 +29,7 @@ const schema = Joi.object({
 
 app.post("/validate",(req,res)=>{
     const { error, value } = schema.validate(req.body);
-   // res.json(req.body);
-
+ 
     // If validation fails, return an error response
     if (error) {
         return res.status(400).json({
@@ -39,7 +38,7 @@ app.post("/validate",(req,res)=>{
     }
     // If validation succeeds, return a success response
     WriteUserDataFile(value);
-    //temporaryData=value;
+  
     return res.json({ message: 'Data is valid', data: value });
     
 });
