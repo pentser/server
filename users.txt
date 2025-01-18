@@ -1,1 +1,1 @@
-{"user":"dan123","email":"eli.pentser@gmail.com","password":"123456$","confirm":"123456$"}
+{"user":"eliyahu","email":"eli.pentser@gmail.com","password":"123456$","confirm":"123456$"}
